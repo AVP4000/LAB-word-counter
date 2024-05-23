@@ -16,6 +16,15 @@ const wordCounter = (value) => {
 // OPTIONAL CHALLENGE
 const toggleMode = (btnText) => {
   // complete the function
+  if (btnText.includes('Dark')) {
+    toggleButton.innerHTML = "Light Mode"
+    document.body.style.background = "black"
+    document.body.style.color = "white"
+  } else {
+    toggleButton.innerHTML = "Dark Mode"
+    document.body.style.background = "white"
+    document.body.style.color = "black"
+  }
 }
 
 // ************************************************ //
